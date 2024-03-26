@@ -30,7 +30,7 @@
         "url": "git+https://github.com/10ai/nextjs-cli.git"
     },
     "author": "Josh Wong (ObjectJosh)",
-    "license": "ISC",
+    "license": "MIT",
     "bugs": {
         "url": "https://github.com/10ai/nextjs-cli/issues"
     },
