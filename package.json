@@ -1,0 +1,73 @@
+{
+    "name": "nextjs-cli",
+    "version": "1.0.0",
+    "description": "",
+    "type": "module",
+    "main": "dist/index.js",
+    "module": "dist/index.mjs",
+    "types": "dist/index.d.ts",
+    "files": [
+        "dist"
+    ],
+    "bin": {
+        "nextjs-cli": "./dist/index.js"
+    },
+    "scripts": {
+        "start": "node ./dist/index.js",
+        "build": "tsup && node src/scripts/copy-template-files.js",
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "prettier": "prettier --write",
+        "lint": "eslint --ignore-path .eslintignore --ext .js,.ts,.tsx",
+        "prepare": "husky",
+        "template": "node src/scripts/template-add-ts-nocheck.js",
+        "template:clear": "node src/scripts/template-remove-ts-nocheck.js"
+    },
+    "engines": {
+        "node": ">=20.0.0"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/10ai/nextjs-cli.git"
+    },
+    "author": "Josh Wong (ObjectJosh)",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/10ai/nextjs-cli/issues"
+    },
+    "homepage": "https://github.com/10ai/nextjs-cli#readme",
+    "dependencies": {
+        "commander": "^12.0.0",
+        "dotenv": "^16.4.5",
+        "inquirer": "^9.2.14",
+        "open": "^10.0.3",
+        "picocolors": "^1.0.0"
+    },
+    "devDependencies": {
+        "@types/fs-extra": "^11.0.4",
+        "@types/inquirer": "^9.0.7",
+        "@types/node": "^20.11.17",
+        "@types/shelljs": "^0.8.15",
+        "@typescript-eslint/eslint-plugin": "^7.0.1",
+        "@typescript-eslint/parser": "^7.0.1",
+        "eslint": "^8.56.0",
+        "eslint-config-prettier": "^9.1.0",
+        "husky": "^8.0.0",
+        "lint-staged": "^15.2.2",
+        "prettier": "^3.2.5",
+        "shelljs": "^0.8.5",
+        "ts-node": "^10.9.2",
+        "tsup": "^8.0.2",
+        "typescript": "^5.3.3"
+    },
+    "husky": {
+        "hooks": {
+            "pre-commit": "lint-staged"
+        }
+    },
+    "lint-staged": {
+        "src/**": [
+            "npm run prettier",
+            "npm run lint"
+        ]
+    }
+}

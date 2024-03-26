@@ -1,0 +1,15 @@
+node_modules/
+/lib
+.DS_Store
+# .env
+
+# Ignore test-related files
+/coverage.data
+/coverage/
+
+# Build files
+/dist
+
+# Directory where you can run the cli
+demo/*
+!demo/README.md
