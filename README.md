@@ -6,12 +6,15 @@
 
 <div align="center">
 
+<img src="https://github.com/10ai/nextjs-cli/assets/42549561/3f83b293-6a82-4581-b8c6-64fb5a7b17fb" width=200>
+
 # `nextjs-cli`
 
 **NextJS project builder and initializer CLI**
 
 [![10x](https://img.shields.io/badge/10xAI-open%20source-blueviolet.svg)](https://10ai.dev)
 [![10x](https://img.shields.io/badge/discord-10xAI-%237289da.svg?logo=discord)](https://discord.gg/FJZ4nyhBW7)
+
 </div>
 
 
