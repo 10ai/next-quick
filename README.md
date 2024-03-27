@@ -12,6 +12,8 @@
 
 **⚡️ NextJS quickstart project builder CLI**
 
+> Go from an empty repository to a full-stack Next.js site with `authentication` `deployment` `database` without writing a single line of code
+
 [![10x](https://img.shields.io/badge/10xAI-open%20source-blueviolet.svg)](https://10ai.dev)
 [![10x](https://img.shields.io/badge/discord-10xAI-%237289da.svg?logo=discord)](https://discord.gg/FJZ4nyhBW7)
 
