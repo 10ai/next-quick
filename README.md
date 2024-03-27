@@ -66,7 +66,7 @@ next-quick <command>
 ### Available commands:
 
 - <a href="#-init">`init`</a> - Sets up a new Next.js project with create-next-app, with flag presets and additional config (husky, prettier, jest)
-- <a href="#-database">`database`</a> - Set up database & files (MongoDB)
+- <a href="#%EF%B8%8F-database">`database`</a> - Set up database & files (MongoDB)
 - <a href="#-deploy">`deploy`</a> - Directs user to deployment service (Vercel / AWS)
 - <a href="#-auth">`auth`</a> - Set up auth (Kinde Auth)
 
