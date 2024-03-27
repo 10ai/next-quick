@@ -17,6 +17,10 @@
 
 </div>
 
+## Install
+```
+npm i -g next-quick
+```
 
 ## Usage:
 ```
