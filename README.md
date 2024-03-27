@@ -17,6 +17,8 @@
 
 </div>
 
+https://github.com/10ai/next-quick/assets/42549561/2b7a8134-10be-4331-bbde-d0b22fcd1167
+
 ## Install
 ```
 npm i -g next-quick
