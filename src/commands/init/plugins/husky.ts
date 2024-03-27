@@ -13,6 +13,7 @@ import { execSync } from 'child_process';
 const husky: Plugin = {
     install: (packageJsonAdditions) => {
         NPM.installDev('husky lint-staged');
+        createLintStagedRc();
         createHuskyPreCommitHook();
         execSync('git init');
         execSync('npx husky');
@@ -36,8 +37,24 @@ function updatePackageJson(packageJsonAdditions: any) {
 
     // Why the !() syntax? It's a glob pattern to ignore the [kindeAuth] directory because ESLint doesn't like it
     packageJsonAdditions['lint-staged'] = {
-        '!(src/app/api/auth/[kindeAuth]/*)*.{ts,tsx}': scripts,
+        '*.{ts,tsx}': scripts,
     };
+}
+
+// https://nextjs.org/docs/app/building-your-application/configuring/eslint#lint-staged
+function createLintStagedRc() {
+    const content = `
+const path = require('path');
+
+const buildEslintCommand = (filenames) =>
+    \`next lint --fix --file \${filenames.map((f) => path.relative(process.cwd(), f)).join(' --file ')}\`;
+
+module.exports = {
+    '*.{js,jsx,ts,tsx}': [buildEslintCommand],
+};
+`;
+
+    fs.writeFileSync(path.join(process.cwd(), '.lintstagedrc.js'), content, { encoding: 'utf8' });
 }
 
 function createHuskyPreCommitHook() {

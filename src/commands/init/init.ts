@@ -88,7 +88,7 @@ const initProject: ICommand = createCommand({
 
 function createNextApp(projectPath: string) {
     const FLAGS = '--use-npm --typescript --tailwind  --eslint --app --src-dir --import-alias "@/*"';
-    execSync(`npx create-next-app . ${FLAGS}`, { cwd: projectPath, stdio: 'inherit' });
+    execSync(`npx create-next-app@latest . ${FLAGS}`, { cwd: projectPath, stdio: 'inherit' });
 }
 
 export default initProject;
