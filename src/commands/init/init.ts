@@ -76,6 +76,7 @@ const initProject: ICommand = createCommand({
                         true
                     );
                     log(`Project ${cyan(projectName)} initialized.`, LogLevel.checkmark);
+                    log(`Run ${cyan(`cd ${projectName}`)} then run ${cyan('nextjs-cli')} to view new commands.`, LogLevel.checkmark);
                 } catch (error) {
                     console.error('Failed to initialize project:', error);
                 }
