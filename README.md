@@ -10,7 +10,7 @@
 
 # `next-quick`
 
-**NextJS project builder and initializer CLI**
+**NextJS quickstart project builder CLI**
 
 [![10x](https://img.shields.io/badge/10xAI-open%20source-blueviolet.svg)](https://10ai.dev)
 [![10x](https://img.shields.io/badge/discord-10xAI-%237289da.svg?logo=discord)](https://discord.gg/FJZ4nyhBW7)
