@@ -47,10 +47,10 @@ In another terminal:
 cd demo
 ```
 ```
-npm link nextjs-cli
+npm link next-quick
 ```
 ```
-nextjs-cli <command>
+next-quick <command>
 ```
 
 ##### While developing, to see local changes you need to update the build. Go to root directory:

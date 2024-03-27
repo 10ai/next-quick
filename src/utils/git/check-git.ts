@@ -12,7 +12,7 @@ import { log, LogLevel } from 'utils/logger.js';
 async function validateGitHubStatus() {
     const { yellow } = colors;
     if (!isGitRepository()) {
-        log('This directory is not a Git repository. Did you mean to run: nextjs-cli init', LogLevel.error);
+        log('This directory is not a Git repository. Did you mean to run: next-quick init', LogLevel.error);
         process.exit(1);
     }
     if (!hasRemote()) {

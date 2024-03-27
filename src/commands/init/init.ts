@@ -45,7 +45,7 @@ const initProject: ICommand = createCommand({
                 try {
                     const projectName = answers.projectName;
                     const projectPath = path.join(process.cwd(), projectName);
-                    const configPath = path.join(projectPath, '.nextjsclirc');
+                    const configPath = path.join(projectPath, '.nextquickrc');
                     // const defaultConfig = { projectName, projectPath };
                     const defaultConfig = { projectName };
 
@@ -69,14 +69,14 @@ const initProject: ICommand = createCommand({
 
                     fs.writeFileSync(configPath, JSON.stringify(defaultConfig, null, 2), 'utf-8');
                     log(
-                        `Config file .nextjsclirc created in ${configPath}`,
+                        `Config file .nextquickrc created in ${configPath}`,
                         LogLevel.checkmark,
                         LogColor.cyan,
                         true,
                         true
                     );
                     log(`Project ${cyan(projectName)} initialized.`, LogLevel.checkmark);
-                    log(`Run ${command(`cd ${projectName}`)} then run ${command('nextjs-cli')} to view new commands.`);
+                    log(`Run ${command(`cd ${projectName}`)} then run ${command('next-quick')} to view new commands.`);
                 } catch (error) {
                     console.error('Failed to initialize project:', error);
                 }

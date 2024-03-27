@@ -6,9 +6,9 @@
 
 <div align="center">
 
-<img src="https://github.com/10ai/nextjs-cli/assets/42549561/3f83b293-6a82-4581-b8c6-64fb5a7b17fb" width=200>
+<img src="https://github.com/10ai/next-quick/assets/42549561/3f83b293-6a82-4581-b8c6-64fb5a7b17fb" width=200>
 
-# `nextjs-cli`
+# `next-quick`
 
 **NextJS project builder and initializer CLI**
 
@@ -20,7 +20,7 @@
 
 ## Usage:
 ```
-nextjs-cli <command>
+next-quick <command>
 ```
 
 ### Available commands:
