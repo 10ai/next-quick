@@ -1,7 +1,7 @@
 {
     "name": "next-quick",
-    "version": "1.0.0",
-    "description": "",
+    "version": "1.0.1",
+    "description": "Quickstart your Next.js projects w/ Auth, Deployment, DB using next-quick CLI!",
     "type": "module",
     "main": "dist/index.js",
     "module": "dist/index.mjs",
@@ -29,6 +29,19 @@
         "type": "git",
         "url": "git+https://github.com/10ai/next-quick.git"
     },
+    "keywords": [
+        "next",
+        "nextjs",
+        "next.js",
+        "cli",
+        "quickstart",
+        "typescript",
+        "builder",
+        "create-next-app",
+        "boilerplate",
+        "starter",
+        "template"
+    ],
     "author": "Josh Wong (ObjectJosh)",
     "license": "MIT",
     "bugs": {
