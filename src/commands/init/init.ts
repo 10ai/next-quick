@@ -10,7 +10,7 @@ import createCommand from '../createCommand.js';
 import { ICommand } from 'types/ICommand.js';
 import allPlugins from './plugins/index.js';
 import pluginConfigFile from './plugins/config.json';
-import { log, LogLevel, LogColor } from 'utils/logger.js';
+import { log, LogLevel, LogColor, command } from 'utils/logger.js';
 
 /**
  * Initializes a new project by prompting the user for a project name and a GitHub template.
@@ -76,7 +76,7 @@ const initProject: ICommand = createCommand({
                         true
                     );
                     log(`Project ${cyan(projectName)} initialized.`, LogLevel.checkmark);
-                    log(`Run ${cyan(`cd ${projectName}`)} then run ${cyan('nextjs-cli')} to view new commands.`, LogLevel.checkmark);
+                    log(`Run ${command(`cd ${projectName}`)} then run ${command('nextjs-cli')} to view new commands.`);
                 } catch (error) {
                     console.error('Failed to initialize project:', error);
                 }

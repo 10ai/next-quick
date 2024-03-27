@@ -1,6 +1,10 @@
 import colors from 'picocolors';
 const { green, red, cyan, yellow, white, bgBlack, bold } = colors;
 
+const command = (text: string) => bgBlack(` ${bold(text)} `);
+
+export { command };
+
 export enum LogLevel {
     'success',
     'checkmark',
