@@ -9,6 +9,9 @@ const targetDir = './dist/template';
 // shell.cp('-R', `${sourceDir}/*.ts`, targetDir);
 // console.log('TypeScript files copied successfully.');
 
+// Create the target directory if it doesn't exist
+shell.mkdir('-p', targetDir);
+
 // Copying all files
 shell.cp('-R', `${sourceDir}/*`, targetDir);
 console.log('Template files copied successfully.');
