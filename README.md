@@ -17,7 +17,7 @@
 
 </div>
 
-https://github.com/10ai/next-quick/assets/42549561/2b7a8134-10be-4331-bbde-d0b22fcd1167
+https://github.com/10ai/next-quick/assets/42549561/41c15e84-76e5-4c28-aa9b-85154956ab11
 
 ## Install
 ```
