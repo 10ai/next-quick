@@ -8,9 +8,9 @@
 
 <img src="https://github.com/10ai/next-quick/assets/42549561/3f83b293-6a82-4581-b8c6-64fb5a7b17fb" width=200>
 
-# `next-quick`
+# `next-quick` 
 
-**NextJS quickstart project builder CLI**
+**⚡️ NextJS quickstart project builder CLI**
 
 [![10x](https://img.shields.io/badge/10xAI-open%20source-blueviolet.svg)](https://10ai.dev)
 [![10x](https://img.shields.io/badge/discord-10xAI-%237289da.svg?logo=discord)](https://discord.gg/FJZ4nyhBW7)
@@ -19,22 +19,56 @@
 
 https://github.com/10ai/next-quick/assets/42549561/41c15e84-76e5-4c28-aa9b-85154956ab11
 
+## Features
+### `init`
+- Runs `create-next-app@latest` with
+    - Next.js App Router
+    - npm
+    - TypeScript
+    - Tailwind CSS
+- Prettier & ESLint w/ config files
+- Sets up husky pre-commit hook w/ lint-staged
+    - Runs Prettier and ESLint
+- Installs Jest
+
+### `database`
+- MongoDB w/ Mongoose
+    - Step-by-step setup guide
+    - Updates `.env.local`
+    - Creates example User schema
+    - Sets up database connection file and API endpoint
+    - Generates frontend page to test DB connection
+
+### `deploy`
+- Vercel
+- AWS Amplify
+
+### `auth`
+- Kinde Auth
+   - Step-by-step setup guide
+   - < 5 min setup time!
+   - Google OAuth, FaceBook, etc.
+   - Magic links & passwordless login
+    
+
+
 ## Install
 ```
 npm i -g next-quick
 ```
 
-## Usage:
+## Usage
 ```
 next-quick <command>
 ```
 
 ### Available commands:
 
-- `init` - Sets up a new Next.js project with create-next-app, with flag presets and additional config (husky, prettier, jest)
-- `database` - Set up database & files (MongoDB)
-- `deploy` - Directs user to deployment service (Vercel / AWS)
-- `auth` - Set up auth (Kinde Auth)
+- <a href="#init">`init`</a> - Sets up a new Next.js project with create-next-app, with flag presets and additional config (husky, prettier, jest)
+- <a href="#database">`database`</a> - Set up database & files (MongoDB)
+- <a href="#deploy">`deploy`</a> - Directs user to deployment service (Vercel / AWS)
+- <a href="#auth">`auth`</a> - Set up auth (Kinde Auth)
+
 
 ## Contributing
 
