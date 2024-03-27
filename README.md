@@ -20,34 +20,35 @@
 https://github.com/10ai/next-quick/assets/42549561/41c15e84-76e5-4c28-aa9b-85154956ab11
 
 ## Features
-### `init`
-- Runs `create-next-app@latest` with
-    - Next.js App Router
-    - npm
-    - TypeScript
-    - Tailwind CSS
-- Prettier & ESLint w/ config files
-- Sets up husky pre-commit hook w/ lint-staged
-    - Runs Prettier and ESLint
-- Installs Jest
+### 🐣 `init`
+- 🏃‍♂️ Runs [`create-next-app@latest`](https://nextjs.org/docs/pages/api-reference/create-next-app) with
+    - [Next.js App Router](https://nextjs.org/docs/app)
+    - [npm](https://docs.npmjs.com/about-npm)
+    - [TypeScript](https://www.typescriptlang.org/)
+    - [Tailwind CSS](https://tailwindcss.com/)
+- 🪄 [Prettier](https://prettier.io/) & [ESLint](https://eslint.org/) w/ config files
+- 🐶 Sets up [Husky](https://typicode.github.io/husky/) pre-commit hook w/ [lint-staged](https://github.com/lint-staged/lint-staged)
+    - Runs Prettier and ESLint on all staged files
+- 🧪 Installs [Jest](https://jestjs.io/)
 
-### `database`
-- MongoDB w/ Mongoose
+### 🗃️ `database`
+- 🦆 [MongoDB](https://www.mongodb.com/) w/ [Mongoose](https://www.mongodb.com/services/support/mongoose-odm-support)
     - Step-by-step setup guide
     - Updates `.env.local`
     - Creates example User schema
     - Sets up database connection file and API endpoint
     - Generates frontend page to test DB connection
 
-### `deploy`
-- Vercel
-- AWS Amplify
+### 🚀 `deploy`
+- ⚫ [Vercel](https://vercel.com/)
+- 🅰️ [AWS Amplify](https://aws.amazon.com/amplify)
 
-### `auth`
-- Kinde Auth
+### 🔐 `auth`
+- 🦋 [Kinde Auth](https://kinde.com/)
    - Step-by-step setup guide
    - < 5 min setup time!
-   - Google OAuth, FaceBook, etc.
+   - OAuth - Google, FaceBook, GitHub, LinkedIn, etc.
+   - MFA - email, phone number, authenticator app
    - Magic links & passwordless login
     
 
@@ -64,10 +65,10 @@ next-quick <command>
 
 ### Available commands:
 
-- <a href="#init">`init`</a> - Sets up a new Next.js project with create-next-app, with flag presets and additional config (husky, prettier, jest)
-- <a href="#database">`database`</a> - Set up database & files (MongoDB)
-- <a href="#deploy">`deploy`</a> - Directs user to deployment service (Vercel / AWS)
-- <a href="#auth">`auth`</a> - Set up auth (Kinde Auth)
+- <a href="#-init">`init`</a> - Sets up a new Next.js project with create-next-app, with flag presets and additional config (husky, prettier, jest)
+- <a href="#-database">`database`</a> - Set up database & files (MongoDB)
+- <a href="#-deploy">`deploy`</a> - Directs user to deployment service (Vercel / AWS)
+- <a href="#-auth">`auth`</a> - Set up auth (Kinde Auth)
 
 
 ## Contributing
