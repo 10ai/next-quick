@@ -86,6 +86,4 @@ Any contribution intentionally submitted for inclusion in a 10x AI project, shal
 
 ### License
 
-This contribution is dual licensed under MIT license ([LICENSE-MIT](LICENSE-MIT) or <http://opensource.org/licenses/MIT>) at your option.
-
-For clarity, "your" refers to 10x AI or any other licensee/user of the contribution.
+This contribution licensed under MIT license ([LICENSE-MIT](LICENSE-MIT) or <http://opensource.org/licenses/MIT>)
